@@ -1,6 +1,6 @@
 {
 	"name": "next-portfolio",
-	"version": "0.1.0",
+	"version": "0.1.2",
 	"license": "UNLICENSED",
 	"author": "Krichevskyi Stanislav",
 	"private": true,
@@ -10,7 +10,8 @@
 		"start": "next start",
 		"lint": "next lint --no-cache",
 		"format": "prettier --check --ignore-path .gitignore .",
-		"format:fix": "prettier --write --ignore-path .gitignore ."
+		"format:fix": "prettier --write --ignore-path .gitignore .",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"@types/node": "20.5.9",
@@ -27,7 +28,12 @@
 		"@total-typescript/ts-reset": "^0.5.1",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-sonarjs": "^0.21.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^14.0.1",
 		"prettier": "^3.0.3"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
 	},
 	"browserslist": {
 		"production": [
