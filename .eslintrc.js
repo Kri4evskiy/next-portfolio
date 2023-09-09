@@ -1,5 +1,7 @@
 module.exports = {
 	plugins: ['sonarjs'],
 	extends: ['next/core-web-vitals', 'plugin:sonarjs/recommended', 'prettier'],
-	rules: {}
+	rules: {
+		'jsx-a11y/alt-text': 'error'
+	}
 }
