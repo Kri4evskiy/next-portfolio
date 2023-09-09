@@ -1,6 +1,6 @@
 {
 	"name": "next-portfolio",
-	"version": "0.1.17",
+	"version": "0.1.19",
 	"license": "UNLICENSED",
 	"author": "Krichevskyi Stanislav",
 	"private": true,
@@ -11,7 +11,8 @@
 		"lint": "next lint --no-cache",
 		"format": "prettier --check --ignore-path .gitignore .",
 		"format:fix": "prettier --write --ignore-path .gitignore .",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"precommit": "lint-staged --bail"
 	},
 	"dependencies": {
 		"@types/node": "20.5.9",
