@@ -1,8 +1,9 @@
 {
 	"name": "next-portfolio",
-	"version": "0.1.21",
+	"description": "Project where I'm experimenting",
+	"author": "Krichevskyi Stanislav <kri4evskiy@gmail.com>",
+	"version": "0.1.24",
 	"license": "UNLICENSED",
-	"author": "Krichevskyi Stanislav",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
@@ -16,7 +17,7 @@
 		"test": "jest --watch"
 	},
 	"dependencies": {
-		"@types/node": "20.5.9",
+		"@types/node": "^20.6.2",
 		"@types/react": "18.2.21",
 		"@types/react-dom": "18.2.7",
 		"eslint": "8.48.0",
@@ -44,7 +45,8 @@
 	"browserslist": {
 		"production": [
 			"> 1%",
-			"not dead"
+			"not dead",
+			"not op_mini all"
 		],
 		"development": [
 			"last 1 chrome version",
