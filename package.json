@@ -1,5 +1,5 @@
 {
-	"version": "0.1.34",
+	"version": "0.1.35",
 	"name": "next-portfolio",
 	"description": "Project where I'm experimenting",
 	"author": "Krichevskyi Stanislav <kri4evskiy@gmail.com>",
@@ -14,7 +14,8 @@
 		"format:fix": "prettier --write --ignore-path .gitignore .",
 		"prepare": "husky install",
 		"precommit": "lint-staged --bail",
-		"test": "jest --watch"
+		"test": "jest",
+		"test:watch": "jest --watchAll"
 	},
 	"dependencies": {
 		"next": "^14.0.1",
@@ -33,15 +34,18 @@
 		"eslint": "8.48.0",
 		"eslint-config-next": "13.4.19",
 		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-jest-dom": "^5.1.0",
 		"eslint-plugin-sonarjs": "^0.21.0",
 		"eslint-plugin-testing-library": "^6.0.2",
 		"husky": "^8.0.3",
 		"jest": "^29.6.4",
 		"jest-environment-jsdom": "^29.6.4",
 		"lint-staged": "^14.0.1",
+		"msw": "^2.0.3",
 		"prettier": "^3.0.3",
 		"ts-jest": "^29.1.1",
-		"typescript": "5.2.2"
+		"typescript": "5.2.2",
+		"whatwg-fetch": "^3.6.19"
 	},
 	"lint-staged": {
 		"**/*": "prettier --write --ignore-unknown"

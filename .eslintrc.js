@@ -1,6 +1,11 @@
 module.exports = {
 	plugins: ['sonarjs', 'testing-library'],
-	extends: ['next/core-web-vitals', 'plugin:sonarjs/recommended', 'prettier'],
+	extends: [
+		'next/core-web-vitals',
+		'plugin:sonarjs/recommended',
+		'prettier',
+		'plugin:jest-dom/recommended'
+	],
 	rules: {
 		'jsx-a11y/alt-text': 'error'
 	},
