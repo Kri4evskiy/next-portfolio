@@ -13,13 +13,13 @@ const config = {
   testEnvironment: 'jest-environment-jsdom',
   preset: 'ts-jest',
   verbose: true,
-  collectCoverage: true,
-  collectCoverageFrom: [
-    // '**/*.{js,jsx}',
-    // '!**/node_modules/**',
-    // '!**/vendor/**',
-    '**/src/components/**'
-  ],
+  // collectCoverage: true,
+  // collectCoverageFrom: [
+  //   // '**/*.{js,jsx}',
+  //   // '!**/node_modules/**',
+  //   // '!**/vendor/**',
+  //   '**/src/components/**'
+  // ],
   errorOnDeprecated: true,
 
   //A set of global variables that need to be available in all test environments.
