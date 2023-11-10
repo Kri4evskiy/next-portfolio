@@ -1,4 +1,4 @@
-import { HttpResponse, http } from 'msw'
+// import { HttpResponse, http } from 'msw'
 
 // export const handlers = [
 // 	http.get('http://localhost:3000/api/about', ({ request, params, cookies }) => {
